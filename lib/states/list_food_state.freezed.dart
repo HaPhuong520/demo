@@ -16,55 +16,11 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$ListFoodState {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(List<FoodModel> listFood) loaded,
-    required TResult Function(String? error) error,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(List<FoodModel> listFood)? loaded,
-    TResult? Function(String? error)? error,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(List<FoodModel> listFood)? loaded,
-    TResult Function(String? error)? error,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_ListFoodStateInitial value) initial,
-    required TResult Function(_ListFoodStateLoading value) loading,
-    required TResult Function(_ListFoodStateLoaded value) loaded,
-    required TResult Function(_ListFoodStateError value) error,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ListFoodStateInitial value)? initial,
-    TResult? Function(_ListFoodStateLoading value)? loading,
-    TResult? Function(_ListFoodStateLoaded value)? loaded,
-    TResult? Function(_ListFoodStateError value)? error,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ListFoodStateInitial value)? initial,
-    TResult Function(_ListFoodStateLoading value)? loading,
-    TResult Function(_ListFoodStateLoaded value)? loaded,
-    TResult Function(_ListFoodStateError value)? error,
-    required TResult orElse(),
-  }) =>
+  String get listFoodStatus => throw _privateConstructorUsedError;
+  List<FoodModel> get listFood => throw _privateConstructorUsedError;
+
+  @JsonKey(ignore: true)
+  $ListFoodStateCopyWith<ListFoodState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -73,6 +29,8 @@ abstract class $ListFoodStateCopyWith<$Res> {
   factory $ListFoodStateCopyWith(
           ListFoodState value, $Res Function(ListFoodState) then) =
       _$ListFoodStateCopyWithImpl<$Res, ListFoodState>;
+  @useResult
+  $Res call({String listFoodStatus, List<FoodModel> listFood});
 }
 
 /// @nodoc
@@ -84,259 +42,56 @@ class _$ListFoodStateCopyWithImpl<$Res, $Val extends ListFoodState>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? listFoodStatus = null,
+    Object? listFood = null,
+  }) {
+    return _then(_value.copyWith(
+      listFoodStatus: null == listFoodStatus
+          ? _value.listFoodStatus
+          : listFoodStatus // ignore: cast_nullable_to_non_nullable
+              as String,
+      listFood: null == listFood
+          ? _value.listFood
+          : listFood // ignore: cast_nullable_to_non_nullable
+              as List<FoodModel>,
+    ) as $Val);
+  }
 }
 
 /// @nodoc
-abstract class _$$_ListFoodStateInitialCopyWith<$Res> {
-  factory _$$_ListFoodStateInitialCopyWith(_$_ListFoodStateInitial value,
-          $Res Function(_$_ListFoodStateInitial) then) =
-      __$$_ListFoodStateInitialCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$_ListFoodStateInitialCopyWithImpl<$Res>
-    extends _$ListFoodStateCopyWithImpl<$Res, _$_ListFoodStateInitial>
-    implements _$$_ListFoodStateInitialCopyWith<$Res> {
-  __$$_ListFoodStateInitialCopyWithImpl(_$_ListFoodStateInitial _value,
-      $Res Function(_$_ListFoodStateInitial) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$_ListFoodStateInitial implements _ListFoodStateInitial {
-  const _$_ListFoodStateInitial();
-
+abstract class _$$_ListFoodStateCopyWith<$Res>
+    implements $ListFoodStateCopyWith<$Res> {
+  factory _$$_ListFoodStateCopyWith(
+          _$_ListFoodState value, $Res Function(_$_ListFoodState) then) =
+      __$$_ListFoodStateCopyWithImpl<$Res>;
   @override
-  String toString() {
-    return 'ListFoodState.initial()';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ListFoodStateInitial);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(List<FoodModel> listFood) loaded,
-    required TResult Function(String? error) error,
-  }) {
-    return initial();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(List<FoodModel> listFood)? loaded,
-    TResult? Function(String? error)? error,
-  }) {
-    return initial?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(List<FoodModel> listFood)? loaded,
-    TResult Function(String? error)? error,
-    required TResult orElse(),
-  }) {
-    if (initial != null) {
-      return initial();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_ListFoodStateInitial value) initial,
-    required TResult Function(_ListFoodStateLoading value) loading,
-    required TResult Function(_ListFoodStateLoaded value) loaded,
-    required TResult Function(_ListFoodStateError value) error,
-  }) {
-    return initial(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ListFoodStateInitial value)? initial,
-    TResult? Function(_ListFoodStateLoading value)? loading,
-    TResult? Function(_ListFoodStateLoaded value)? loaded,
-    TResult? Function(_ListFoodStateError value)? error,
-  }) {
-    return initial?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ListFoodStateInitial value)? initial,
-    TResult Function(_ListFoodStateLoading value)? loading,
-    TResult Function(_ListFoodStateLoaded value)? loaded,
-    TResult Function(_ListFoodStateError value)? error,
-    required TResult orElse(),
-  }) {
-    if (initial != null) {
-      return initial(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _ListFoodStateInitial implements ListFoodState {
-  const factory _ListFoodStateInitial() = _$_ListFoodStateInitial;
-}
-
-/// @nodoc
-abstract class _$$_ListFoodStateLoadingCopyWith<$Res> {
-  factory _$$_ListFoodStateLoadingCopyWith(_$_ListFoodStateLoading value,
-          $Res Function(_$_ListFoodStateLoading) then) =
-      __$$_ListFoodStateLoadingCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$_ListFoodStateLoadingCopyWithImpl<$Res>
-    extends _$ListFoodStateCopyWithImpl<$Res, _$_ListFoodStateLoading>
-    implements _$$_ListFoodStateLoadingCopyWith<$Res> {
-  __$$_ListFoodStateLoadingCopyWithImpl(_$_ListFoodStateLoading _value,
-      $Res Function(_$_ListFoodStateLoading) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$_ListFoodStateLoading implements _ListFoodStateLoading {
-  const _$_ListFoodStateLoading();
-
-  @override
-  String toString() {
-    return 'ListFoodState.loading()';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ListFoodStateLoading);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(List<FoodModel> listFood) loaded,
-    required TResult Function(String? error) error,
-  }) {
-    return loading();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(List<FoodModel> listFood)? loaded,
-    TResult? Function(String? error)? error,
-  }) {
-    return loading?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(List<FoodModel> listFood)? loaded,
-    TResult Function(String? error)? error,
-    required TResult orElse(),
-  }) {
-    if (loading != null) {
-      return loading();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_ListFoodStateInitial value) initial,
-    required TResult Function(_ListFoodStateLoading value) loading,
-    required TResult Function(_ListFoodStateLoaded value) loaded,
-    required TResult Function(_ListFoodStateError value) error,
-  }) {
-    return loading(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ListFoodStateInitial value)? initial,
-    TResult? Function(_ListFoodStateLoading value)? loading,
-    TResult? Function(_ListFoodStateLoaded value)? loaded,
-    TResult? Function(_ListFoodStateError value)? error,
-  }) {
-    return loading?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ListFoodStateInitial value)? initial,
-    TResult Function(_ListFoodStateLoading value)? loading,
-    TResult Function(_ListFoodStateLoaded value)? loaded,
-    TResult Function(_ListFoodStateError value)? error,
-    required TResult orElse(),
-  }) {
-    if (loading != null) {
-      return loading(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _ListFoodStateLoading implements ListFoodState {
-  const factory _ListFoodStateLoading() = _$_ListFoodStateLoading;
-}
-
-/// @nodoc
-abstract class _$$_ListFoodStateLoadedCopyWith<$Res> {
-  factory _$$_ListFoodStateLoadedCopyWith(_$_ListFoodStateLoaded value,
-          $Res Function(_$_ListFoodStateLoaded) then) =
-      __$$_ListFoodStateLoadedCopyWithImpl<$Res>;
   @useResult
-  $Res call({List<FoodModel> listFood});
+  $Res call({String listFoodStatus, List<FoodModel> listFood});
 }
 
 /// @nodoc
-class __$$_ListFoodStateLoadedCopyWithImpl<$Res>
-    extends _$ListFoodStateCopyWithImpl<$Res, _$_ListFoodStateLoaded>
-    implements _$$_ListFoodStateLoadedCopyWith<$Res> {
-  __$$_ListFoodStateLoadedCopyWithImpl(_$_ListFoodStateLoaded _value,
-      $Res Function(_$_ListFoodStateLoaded) _then)
+class __$$_ListFoodStateCopyWithImpl<$Res>
+    extends _$ListFoodStateCopyWithImpl<$Res, _$_ListFoodState>
+    implements _$$_ListFoodStateCopyWith<$Res> {
+  __$$_ListFoodStateCopyWithImpl(
+      _$_ListFoodState _value, $Res Function(_$_ListFoodState) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? listFoodStatus = null,
     Object? listFood = null,
   }) {
-    return _then(_$_ListFoodStateLoaded(
+    return _then(_$_ListFoodState(
+      listFoodStatus: null == listFoodStatus
+          ? _value.listFoodStatus
+          : listFoodStatus // ignore: cast_nullable_to_non_nullable
+              as String,
       listFood: null == listFood
           ? _value._listFood
           : listFood // ignore: cast_nullable_to_non_nullable
@@ -347,12 +102,18 @@ class __$$_ListFoodStateLoadedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ListFoodStateLoaded implements _ListFoodStateLoaded {
-  const _$_ListFoodStateLoaded({required final List<FoodModel> listFood})
-      : _listFood = listFood;
+class _$_ListFoodState extends _ListFoodState {
+  _$_ListFoodState(
+      {this.listFoodStatus = '', final List<FoodModel> listFood = const []})
+      : _listFood = listFood,
+        super._();
 
+  @override
+  @JsonKey()
+  final String listFoodStatus;
   final List<FoodModel> _listFood;
   @override
+  @JsonKey()
   List<FoodModel> get listFood {
     if (_listFood is EqualUnmodifiableListView) return _listFood;
     // ignore: implicit_dynamic_type
@@ -361,256 +122,42 @@ class _$_ListFoodStateLoaded implements _ListFoodStateLoaded {
 
   @override
   String toString() {
-    return 'ListFoodState.loaded(listFood: $listFood)';
+    return 'ListFoodState(listFoodStatus: $listFoodStatus, listFood: $listFood)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ListFoodStateLoaded &&
+            other is _$_ListFoodState &&
+            (identical(other.listFoodStatus, listFoodStatus) ||
+                other.listFoodStatus == listFoodStatus) &&
             const DeepCollectionEquality().equals(other._listFood, _listFood));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_listFood));
+  int get hashCode => Object.hash(runtimeType, listFoodStatus,
+      const DeepCollectionEquality().hash(_listFood));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ListFoodStateLoadedCopyWith<_$_ListFoodStateLoaded> get copyWith =>
-      __$$_ListFoodStateLoadedCopyWithImpl<_$_ListFoodStateLoaded>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(List<FoodModel> listFood) loaded,
-    required TResult Function(String? error) error,
-  }) {
-    return loaded(listFood);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(List<FoodModel> listFood)? loaded,
-    TResult? Function(String? error)? error,
-  }) {
-    return loaded?.call(listFood);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(List<FoodModel> listFood)? loaded,
-    TResult Function(String? error)? error,
-    required TResult orElse(),
-  }) {
-    if (loaded != null) {
-      return loaded(listFood);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_ListFoodStateInitial value) initial,
-    required TResult Function(_ListFoodStateLoading value) loading,
-    required TResult Function(_ListFoodStateLoaded value) loaded,
-    required TResult Function(_ListFoodStateError value) error,
-  }) {
-    return loaded(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ListFoodStateInitial value)? initial,
-    TResult? Function(_ListFoodStateLoading value)? loading,
-    TResult? Function(_ListFoodStateLoaded value)? loaded,
-    TResult? Function(_ListFoodStateError value)? error,
-  }) {
-    return loaded?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ListFoodStateInitial value)? initial,
-    TResult Function(_ListFoodStateLoading value)? loading,
-    TResult Function(_ListFoodStateLoaded value)? loaded,
-    TResult Function(_ListFoodStateError value)? error,
-    required TResult orElse(),
-  }) {
-    if (loaded != null) {
-      return loaded(this);
-    }
-    return orElse();
-  }
+  _$$_ListFoodStateCopyWith<_$_ListFoodState> get copyWith =>
+      __$$_ListFoodStateCopyWithImpl<_$_ListFoodState>(this, _$identity);
 }
 
-abstract class _ListFoodStateLoaded implements ListFoodState {
-  const factory _ListFoodStateLoaded(
-      {required final List<FoodModel> listFood}) = _$_ListFoodStateLoaded;
+abstract class _ListFoodState extends ListFoodState {
+  factory _ListFoodState(
+      {final String listFoodStatus,
+      final List<FoodModel> listFood}) = _$_ListFoodState;
+  _ListFoodState._() : super._();
 
+  @override
+  String get listFoodStatus;
+  @override
   List<FoodModel> get listFood;
+  @override
   @JsonKey(ignore: true)
-  _$$_ListFoodStateLoadedCopyWith<_$_ListFoodStateLoaded> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$_ListFoodStateErrorCopyWith<$Res> {
-  factory _$$_ListFoodStateErrorCopyWith(_$_ListFoodStateError value,
-          $Res Function(_$_ListFoodStateError) then) =
-      __$$_ListFoodStateErrorCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String? error});
-}
-
-/// @nodoc
-class __$$_ListFoodStateErrorCopyWithImpl<$Res>
-    extends _$ListFoodStateCopyWithImpl<$Res, _$_ListFoodStateError>
-    implements _$$_ListFoodStateErrorCopyWith<$Res> {
-  __$$_ListFoodStateErrorCopyWithImpl(
-      _$_ListFoodStateError _value, $Res Function(_$_ListFoodStateError) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? error = freezed,
-  }) {
-    return _then(_$_ListFoodStateError(
-      freezed == error
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$_ListFoodStateError implements _ListFoodStateError {
-  const _$_ListFoodStateError([this.error]);
-
-  @override
-  final String? error;
-
-  @override
-  String toString() {
-    return 'ListFoodState.error(error: $error)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ListFoodStateError &&
-            (identical(other.error, error) || other.error == error));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, error);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_ListFoodStateErrorCopyWith<_$_ListFoodStateError> get copyWith =>
-      __$$_ListFoodStateErrorCopyWithImpl<_$_ListFoodStateError>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(List<FoodModel> listFood) loaded,
-    required TResult Function(String? error) error,
-  }) {
-    return error(this.error);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(List<FoodModel> listFood)? loaded,
-    TResult? Function(String? error)? error,
-  }) {
-    return error?.call(this.error);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(List<FoodModel> listFood)? loaded,
-    TResult Function(String? error)? error,
-    required TResult orElse(),
-  }) {
-    if (error != null) {
-      return error(this.error);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_ListFoodStateInitial value) initial,
-    required TResult Function(_ListFoodStateLoading value) loading,
-    required TResult Function(_ListFoodStateLoaded value) loaded,
-    required TResult Function(_ListFoodStateError value) error,
-  }) {
-    return error(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_ListFoodStateInitial value)? initial,
-    TResult? Function(_ListFoodStateLoading value)? loading,
-    TResult? Function(_ListFoodStateLoaded value)? loaded,
-    TResult? Function(_ListFoodStateError value)? error,
-  }) {
-    return error?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_ListFoodStateInitial value)? initial,
-    TResult Function(_ListFoodStateLoading value)? loading,
-    TResult Function(_ListFoodStateLoaded value)? loaded,
-    TResult Function(_ListFoodStateError value)? error,
-    required TResult orElse(),
-  }) {
-    if (error != null) {
-      return error(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _ListFoodStateError implements ListFoodState {
-  const factory _ListFoodStateError([final String? error]) =
-      _$_ListFoodStateError;
-
-  String? get error;
-  @JsonKey(ignore: true)
-  _$$_ListFoodStateErrorCopyWith<_$_ListFoodStateError> get copyWith =>
+  _$$_ListFoodStateCopyWith<_$_ListFoodState> get copyWith =>
       throw _privateConstructorUsedError;
 }
