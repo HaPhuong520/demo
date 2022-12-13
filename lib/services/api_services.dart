@@ -16,7 +16,7 @@ class APIService {
         List<FoodModel> foods = body
             .map(
               (dynamic item) => FoodModel.fromJson(item),
-            )
+        )
             .toList();
         return foods;
       }else{
@@ -25,6 +25,6 @@ class APIService {
     } catch (e) {
       throw Exception(e);
     }
-   
+
   }
 }
